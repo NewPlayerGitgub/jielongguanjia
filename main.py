@@ -13,10 +13,11 @@ if __name__ == '__main__':
             'Content-Type' : 'application/json',
             'Connection' : 'keep-alive',
             'Host' : 'h-api.jielong.co',
-            'Authorization' : 'Bearer eyJ0...省略号...dvUiULY',#authorization填这里
+            'Authorization' : 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOm51bGwsIm9wZW5JZCI6Im9vcm9FNXBJRHlTRkh3NVkzUWQxN1lsWFRGT1EiLCJpc3MiOiJhcGkuamllbG9uZy5jbyIsImF1ZCI6ImNsaWVudC5qaWVsb25nLmNvIiwiaWF0IjoxNjY4NTAxODc3LCJleHAiOjE2Njg3NjEwNzd9.VunTUKcNA697uU5nWtZbHcjpkOnCG1o1EdzAgqipVho
+',#authorization填这里
     }
 
-    data = {"Id":0,"ThreadId":"22186"...省略号..."IsNameNumberComfirm":false}#data填这里
+    data = {"Id":0,"ThreadId":86934414,"Number":"","Signature":"aaa","RecordValues":[],"DateTarget":"","IsNeedManualAudit":false,"MinuteTarget":-1,"IsNameNumberComfirm":false,"IsInvisible":false,"IsCurrentUser":true}#data填这里
 
     r = requests.post(url = url,headers = headers,json = data)
     print(r.json())
